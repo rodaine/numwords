@@ -158,8 +158,8 @@ func IncludeSecond(include bool) {
 // LookupNumber safely accesses the dictionary for a number. The input string is
 // case insensitive.
 func lookupNumber(s string) (n number, ok bool) {
-	dictionary.Lock()
-	defer dictionary.Unlock()
+	dictionary.RLock()
+	defer dictionary.RUnlock()
 	n, ok = dictionary.m[strings.ToLower(s)]
 	return
 }
