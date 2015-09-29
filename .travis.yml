@@ -1,0 +1,19 @@
+sudo: false
+language: go
+go: 1.5
+
+branches:
+  only:
+    - master
+
+install:
+  - go get -t ./...
+  - go get -u github.com/kisielk/errcheck
+  - go get -u github.com/golang/lint/golint
+
+script:
+  - gofmt -l .
+  - golint ./...
+  - go tool vet -test .
+  - errcheck ./...
+  - go test -race -cover ./...
