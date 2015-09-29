@@ -1,4 +1,4 @@
-# numwords <br/> [![Build Status](https://travis-ci.org/rodaine/numwords.svg)](https://travis-ci.org/rodaine/numwords) [![GoDoc](https://godoc.org/rodaine/numwords?status.svg)](https://godoc.org/rodaine/numwords)
+# numwords <br/> [![Build Status](https://travis-ci.org/rodaine/numwords.svg)](https://travis-ci.org/rodaine/numwords) [![GoDoc](https://godoc.org/github.com/rodaine/numwords?status.svg)](https://godoc.org/github.com/rodaine/numwords)
 
 **numwords** is a utility package for Go (golang) that converts natural language numbers
 to their actual numeric values. The numbers can be parsed out as strings,
@@ -48,7 +48,7 @@ This package is largely inspired by the excellent [Numerizer Ruby gem](https://g
 | three quarters | 0.75 |
 | one ninth | 0.111111 |
 | two thirds | 0.666667 |
-| two and three eigths | 2.375 |
+| two and three eighths | 2.375 |
 | zeroth | 0th |
 | twenty second | 22nd |
 | 5 hundred | 500 |
